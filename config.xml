@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.joeski"
+    id        = "com.phonegap.ogayca"
     version   = "1.0.0">
 
-<name>Unica</name>
+<name>OGAYCA</name>
 
 <description>
-Esta es una aplicación para el exámen de admisión.
+Esta es una aplicación para OGAYCA.
 </description>
 
 <author href="https://example.com" email="you@example.com">
