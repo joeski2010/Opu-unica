@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plataforma Móbil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+  <meta charset="utf-8">
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+</script>
+ 
+ <!--FRAGMENTO DE LIBRERIAS JQUERY MOBILE --
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<!--FIN FRAGMENTO -->
+ <!--FRAGMENTO DE LIBRERIAS JQUERY MOBILE -->
+ <link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+ <link rel="stylesheet" href="css/estilos.css" />
+<script src="js/jquery.js"></script> 
+
+<script src="js/jquery.mobile-1.3.0.js"></script>
+
+<script src="js/codigo.js"></script>
+<!--FIN FRAGMENTO -->
+
+<script type=”text/javascript”>
+function descargarpdf() {
+window.open('https://docs.google.com/viewer?url=http://www.unica.edu.pe/publicacion/resultados/documentos/admision2015.pdf', '_system', 'location=yes');
+};
+
+</script>
+<script>
+function openpdf() {
+     var ref = window.open('https://docs.google.com/viewer?url=http://www.unica.edu.pe/publicacion/resultados/documentos/admision2015.pdf', '_blank', 'location=yes');
+     ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+     ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+     ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+     ref.addEventListener('exit', function(event) { alert(event.type); });
+}
+</script>
+</head>
+<body>
+<!--PRINCIPAL -->
+<div data-role="page" id="principal">
+<!--HEADER -->
+<div data-role="header" data-theme="b" data-position="fixed" >
+<a href="#bars" data-icon="grid">Opciones</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#search" data-icon="search">Nosotros</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes1" data-icon="start" data-theme="e">Nosotros</a></li>
+<li><a href="#vacantes1" data-icon="gear" data-theme="e">Eventos</a></li>
+<li><a href="#inscripcion1" data-icon="search" data-theme="e">Standares</a></li>
+
+<li><a href="#contacto" data-icon="info" data-theme="e">Contacto</a></li>
+
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<img src="img/iconi.png" width="100%" height="486">
+
+
+<ul data-role="listview" data-inset="true" data-split-icon="search" data-split-theme="b">
+<li data-role="list-divider">Contenido</li>
+<li><a href="#">
+<img src="img/icon.png">
+<h2>Visión</h2>
+<p>La universidad nacional "San Luis Gonzaga de Ica", es una institución formadora de profesionales de alto nivel académico, competitivos con contenido humanístico, social y solidario. Comprometidos con el desarrollo regional y nacional, mediante la investigación científica y tecnológica, dentro de los principios de integridad, transparencia, pertinencia y la preservación del medio ambiente.</p>
+</a>
+<a href="#promo1" data-rel="popup" data-position-to="window" data-transition="pop">Mas información
+</a>
+</li>
+<li><a href="#">
+<img src="img/icon.png">
+<h2>Misión</h2>
+<p>Ser una universidad acreditada con liderazgo regional, nacional e internacional, por su excelencia académica e investigación científica y tecnológica, orientada a resolver prioritariamente los problemas regionales y nacionales, creando una cultura de calidad que logre una solida integración con sus graduados y sustentada en el pluralismo y responsabilidad social, promoviendo el manejo sostenible de los recursos naturales y conservación del medio ambiente.2</p>
+</a>
+<a href="#promo2" data-rel="popup" data-position-to="window" data-transition="pop">Mas información
+</a>
+</li>
+<li><a href="#">
+<img src="img/icon.png">
+<h2>Reseña Historica</h2>
+<p>El origen de la Universidad Nacional “San Luis Gonzaga” de Ica se remonta a 1955, durante el gobierno del Presidente Manuel A. Odria; sin embargo nace legalmente el 20 de diciembre de 1955, por ley N° 12495, gestión del senador por Ica, Sr. Temistocles Rocha Rebata, sin embargo no funciono inmediatamente, fueron necesarias jornadas heroicas de lucha para lograr su funcionamiento, con el histórico cabildo abierto del 18 de Febrero de 1961 donde se acordó declarar fundada la Universidad Nacional “San Luis Gonzaga” de Ica.</p>
+</a>
+<a href="#promo3" data-rel="popup" data-position-to="window" data-transition="pop" >Mas información
+</a>
+</li>
+</ul>
+<!---POPUP 1-->
+<div data-role="popup" id="promo1" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>Visión</h3>
+<p align="justify">La universidad nacional "San Luis Gonzaga de Ica", es una institución formadora de profesionales de alto nivel académico, competitivos con contenido humanístico, social y solidario. Comprometidos con el desarrollo regional y nacional, mediante la investigación científica y tecnológica, dentro de los principios de integridad, transparencia, pertinencia y la preservación del medio ambiente.</p>
+</div>
+<!--FIN POPUP -->
+
+<!---POPUP 2-->
+<div data-role="popup" id="promo2" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>Misión</h3>
+<p align="justify">Ser una universidad acreditada con liderazgo regional, nacional e internacional, por su excelencia académica e investigación científica y tecnológica, orientada a resolver prioritariamente los problemas regionales y nacionales, creando una cultura de calidad que logre una solida integración con sus graduados y sustentada en el pluralismo y responsabilidad social, promoviendo el manejo sostenible de los recursos naturales y conservación del medio ambiente.</p>
+</div>
+<!--FIN POPUP -->
+
+<!---POPUP 2-->
+<div data-role="popup" id="promo3" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>Reseña Histórica</h3>
+<p align="justify">El origen de la Universidad Nacional “San Luis Gonzaga” de Ica se remonta a 1955, durante el gobierno del Presidente Manuel A. Odria; sin embargo nace legalmente el 20 de diciembre de 1955, por ley N° 12495, gestión del senador por Ica, Sr. Temistocles Rocha Rebata, sin embargo no funciono inmediatamente, fueron necesarias jornadas heroicas de lucha para lograr su funcionamiento, con el histórico cabildo abierto del 18 de Febrero de 1961 donde se acordó declarar fundada la Universidad Nacional “San Luis Gonzaga” de Ica.</p>
+</div>
+<!--FIN POPUP -->
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+<!--FIN FOOTER -->
+
+<!--INICIO PANEL1 -->
+<div data-role="panel" id="bars" data-theme="a">
+<ul data-role="listview">
+<li><a href="#vacantes1" data-icon="start" data-theme="e">Nosotros</a></li>
+<li><a href="#vacantes1" data-icon="gear" data-theme="e">Eventos</a></li>
+<li><a href="#inscripcion1" data-icon="search" data-theme="e">Standares</a></li>
+
+<li><a href="#contacto" data-icon="info" data-theme="e">Contacto</a></li>
+</ul>
+</div>
+<!--FIN PANEL1 -->
+<!--INICIO PANEL2 -->
+<div data-role="panel" id="search" data-position="right" data-display="push" data-theme="a">
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Buscar...">
+<li><a href="#vacantes1" data-icon="start" data-theme="e">Nosotros</a></li>
+<li><a href="#vacantes1" data-icon="gear" data-theme="e">Eventos</a></li>
+<li><a href="#inscripcion1" data-icon="search" data-theme="e">Standares</a></li>
+
+<li><a href="#contacto" data-icon="info" data-theme="e">Contacto</a></li>
+</ul>
+</div>
+<!--FIN PANEL2 -->
+
+</div><!--FIN PAGE -->
+
+
+<!--VACANTES -->
+<div data-role="page" id="vacantes">
+<!--HEADER -->
+
+<div data-role="header" data-position="fixed" >
+<a href="#principal" data-icon="home">Inicio</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#" data-icon="grid">Opciones</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes1" data-icon="start" data-theme="e">Nosotros</a></li>
+<li><a href="#vacantes1" data-icon="gear" data-theme="e">Eventos</a></li>
+<li><a href="#inscripcion1" data-icon="search" data-theme="e">Standares</a></li>
+
+<li><a href="#contacto" data-icon="info" data-theme="e">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<ul data-role="listview" data-inset="true" data-split-icon="search" data-split-theme="b">
+<li data-role="list-divider">Carreras Profesionales</li>
+<li><a href="#">
+
+<h2>ADMINISTRACIÓN</h2>
+<p></p>
+</a>
+<a href="#vaca1" data-rel="popup" data-position-to="window" data-transition="pop">Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+
+<h2>AGRONOMIA</h2>
+<p></p>
+</a>
+<a href="#vaca2" data-rel="popup" data-position-to="window" data-transition="pop">Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>ARQUITECTURA</h2>
+<p></p>
+</a>
+<a href="#vaca3" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>ARQUEOLOGIA</h2>
+<p></p>
+</a>
+<a href="#vaca8" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>BIOLOGIA</h2>
+<p></p>
+</a>
+<a href="#vaca23" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>CIENCIAS:MATEMATICA E INFORMATICA</h2>
+<p></p>
+</a>
+<a href="#vaca4" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>CIENCIAS:QUIMICA</h2>
+<p></p>
+</a>
+<a href="#vaca5" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>CIENCIAS:FISICA</h2>
+<p></p>
+</a>
+<a href="#vaca6" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>CIENCIAS:ESTADISTICA</h2>
+<p></p>
+</a>
+<a href="#vaca7" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>CIENCIAS DE LA COMUNICACION</h2>
+<p></p>
+</a>
+<a href="#vaca9" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:CIENCIAS BIOLOGICAS Y QUIMICAS</h2>
+<p></p>
+</a>
+<a href="#vaca11" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:CIENCIAS MATEMATICAS E INFORMATICA</h2>
+<p></p>
+</a>
+<a href="#vaca12" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION: ARTISTICA</h2>
+<p></p>
+</a>
+<a href="#vaca13" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION: FISICA</h2>
+<p></p>
+</a>
+<a href="#vaca14" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:INICIAL</h2>
+<p></p>
+</a>
+<a href="#vaca15" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:PRIMARIA</h2>
+<p></p>
+</a>
+<a href="#vaca16" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:FILOSOFIA Y CIENCIAS SOCIALES</h2>
+<p></p>
+</a>
+<a href="#vaca17" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:HISTORIA Y GEOGRAFIA</h2>
+<p></p>
+</a>
+<a href="#vaca18" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>EDUCACION:LENGUA Y LITERATURA</h2>
+<p></p>
+</a>
+<a href="#vaca19" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>CONTABILIDAD</h2>
+<p></p>
+</a>
+<a href="#vaca20" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>DERECHO Y CIENCIAS POLITICAS</h2>
+<p></p>
+</a>
+<a href="#vaca24" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>ECONOMIA</h2>
+<p></p>
+</a>
+<a href="#vaca21" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+
+
+<li><a href="#">
+<h2>ENFERMERIA</h2>
+<p></p>
+</a>
+<a href="#vaca25" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>FARMACIA Y BIOQUIMICA</h2>
+<p></p>
+</a>
+<a href="#vaca26" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA CIVIL</h2>
+<p></p>
+</a>
+<a href="#vaca27" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA ELECTRONICA</h2>
+<p></p>
+</a>
+<a href="#vaca28" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA MECANICA Y ELECTRICA</h2>
+<p></p>
+</a>
+<a href="#vaca29" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>INGENIERIA METALURGIA</h2>
+<p></p>
+</a>
+<a href="#vaca30" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA DE MINAS</h2>
+<p></p>
+</a>
+<a href="#vaca31" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA DE ALIMENTOS</h2>
+<p></p>
+</a>
+<a href="#vaca32" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA PESQUERA</h2>
+<p></p>
+</a>
+<a href="#vaca33" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA QUIMICA</h2>
+<p></p>
+</a>
+<a href="#vaca34" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>INGENIERIA PETROQUIMICA</h2>
+<p></p>
+</a>
+<a href="#vaca35" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>INGENIERIA AMBIENTAL Y SANITARIA</h2>
+<p></p>
+</a>
+<a href="#vaca36" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>`
+<li><a href="#">
+<h2>INGENIERIA DE SISTEMAS</h2>
+<p></p>
+</a>
+<a href="#vaca37" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>MEDICINA HUMANA</h2>
+<p></p>
+</a>
+<a href="#vaca38" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>MEDICINA VETERINARIA Y ZOOTECNIA</h2>
+<p></p>
+</a>
+<a href="#vaca39" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>NEGOCIOS INTERNACIONALES</h2>
+<p></p>
+</a>
+<a href="#vaca22" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>ODONTOLOGIA</h2>
+<p></p>
+</a>
+<a href="#vaca40" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>OBSTETRICIA</h2>
+<p></p>
+</a>
+<a href="#vaca41" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+<li><a href="#">
+<h2>PSICOLOGIA</h2>
+<p></p>
+</a>
+<a href="#vaca42" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+<li><a href="#">
+<h2>TURISMO</h2>
+<p></p>
+</a>
+<a href="#vaca10" data-rel="popup" data-position-to="window" data-transition="pop" >Consultar vacantes
+</a>
+</li>
+
+</ul>
+<!---POPUP 1 ADMINISTRACION-->
+<div data-role="popup" id="vaca1" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>52</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>06</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>05</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>05</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!--FIN POPUP1 -->
+<!---POPUP 2-->
+<div data-role="popup" id="vaca2" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>42</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>05</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>04</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>04</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!--FIN POPUP2 -->
+<!---POPUP 3-->
+<div data-role="popup" id="vaca3" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP3 -->
+<!---POPUP 4-->
+<div data-role="popup" id="vaca4" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>25</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP4 -->
+<!---POPUP 5-->
+<div data-role="popup" id="vaca5" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>25</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 6-->
+<div data-role="popup" id="vaca6" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>25</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 7-->
+<div data-role="popup" id="vaca7" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>25</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 8-->
+<div data-role="popup" id="vaca8" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>22</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP8 -->
+
+<!---POPUP 9-->
+<div data-role="popup" id="vaca9" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>22</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 10-->
+<div data-role="popup" id="vaca10" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>22</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 11-->
+<div data-role="popup" id="vaca11" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>21</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 12-->
+<div data-role="popup" id="vaca12" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>21</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 13-->
+<div data-role="popup" id="vaca13" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>21</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 14 FISICA: EDUCACION-->
+<div data-role="popup" id="vaca14" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>12</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 15-->
+<div data-role="popup" id="vaca15" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>30</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 16-->
+<div data-role="popup" id="vaca16" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>30</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 17-->
+<div data-role="popup" id="vaca17" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>21</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 18-->
+<div data-role="popup" id="vaca18" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>18</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>01</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>01</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 19-->
+<div data-role="popup" id="vaca19" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>30</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>01</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 20-->
+<div data-role="popup" id="vaca20" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>47</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>06</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>04</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>04</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 21-->
+<div data-role="popup" id="vaca21" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>75</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>09</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>03</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>03</b></p>
+<p align="justify">TITULADOS <b>03</b></p>
+<p align="justify">DISCAPACITADOS <b>06</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>06</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>03</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 22-->
+<div data-role="popup" id="vaca22" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>75</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>09</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>03</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>03</b></p>
+<p align="justify">TITULADOS <b>03</b></p>
+<p align="justify">DISCAPACITADOS <b>06</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>06</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>03</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 23-->
+<div data-role="popup" id="vaca23" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>36</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 24-->
+<div data-role="popup" id="vaca24" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>47</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>06</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>04</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>04</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 25-->
+<div data-role="popup" id="vaca25" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>32</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 26 FARMACIA-->
+<div data-role="popup" id="vaca26" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>36</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 27 CIVIL -->
+<div data-role="popup" id="vaca27" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>57</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>07</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>05</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>05</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 27 -->
+<div data-role="popup" id="vaca28" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>36</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 29 ING. MECANICA Y ELECTRICA -->
+<div data-role="popup" id="vaca29" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>36</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 30 -->
+<div data-role="popup" id="vaca30" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>30</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 31 MINAS -->
+<div data-role="popup" id="vaca31" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>30</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 32 -->
+<div data-role="popup" id="vaca32" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 33 PESQUERA -->
+<div data-role="popup" id="vaca33" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 34 ING. QUIMICA -->
+<div data-role="popup" id="vaca34" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>28</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 35 PETROQUIMICA -->
+<div data-role="popup" id="vaca35" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 35 AMBIENTAL -->
+<div data-role="popup" id="vaca36" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>48</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>06</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>02</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>02</b></p>
+<p align="justify">TITULADOS <b>02</b></p>
+<p align="justify">DISCAPACITADOS <b>04</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>04</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>02</b></p>
+</div>
+<!---POPUP 36 SISTEMAS -->
+<div data-role="popup" id="vaca37" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>32</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>04</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 37 MEDICINA HUMANA -->
+<div data-role="popup" id="vaca38" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>23</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 38 VETERINARIA -->
+<div data-role="popup" id="vaca39" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>28</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>03</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>03</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+
+<!---POPUP 40 -->
+<div data-role="popup" id="vaca40" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>25</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>03</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 41 -->
+<div data-role="popup" id="vaca41" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+<!---POPUP 42 -->
+<div data-role="popup" id="vaca42" data-theme="b" class="ui-content" data-overlay-theme="b">
+<h3>VACANTES</h3>
+<p align="justify">ORDINARIO <b>19</b></p>
+<p align="justify">PRIMEROS PUESTOS <b>02</b></p>
+<p align="justify">DEPORTISTAS CALIFICADOS <b>01</b></p>
+<p align="justify">VICTIMAS DEL TERRORISMO <b>01</b></p>
+<p align="justify">TITULADOS <b>01</b></p>
+<p align="justify">DISCAPACITADOS <b>02</b></p>
+<p align="justify">HIJOS DE SERVIDOR <b>02</b></p>
+<p align="justify">COLEGIO PRESIDENCIAL <b>01</b></p>
+</div>
+<!--FIN POPUP5 -->
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+</div>
+<!--FIN VACANTES-->
+
+<!--TASAS -->
+<div data-role="page" id="tasas">
+<!--HEADER -->
+<div data-role="header" data-position="fixed" >
+<a href="#principal" data-icon="home">Inicio</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#" data-icon="grid">Opciones</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes" data-icon="start" data-theme="b">Vacantes</a></li>
+<li><a href="#" data-icon="check" data-theme="b">Tasas</a></li>
+<li><a href="#inscripcion" data-icon="search" data-theme="b">Inscripción</a></li>
+<li><a href="#resultados" data-icon="forward" data-theme="b">Resultados</a></li>
+<li><a href="#contacto" data-icon="info" data-theme="b">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<h2>TASAS DE PAGO POR DERECHO DE INSCRIPCION – ADMISIÓN 2015-I</h2>
+<table data-role="table"  data-mode="columntoggle" class="ui-responsive table-stripe">	
+<thead>
+<tbody>
+<tr>
+<th>
+<b>Codigo</b>
+</th><th  >Pago</th><th ><b>Monto</b></th><th><b>Comisión
+Bancaria</b></th><th ><b>Monto Total</b></td></tr>
+</thead>	
+<tr><td colspan="5"><b>	PAGOS SEGUN CRONOGRAMA DE POSTULANTES ORDINARIOS Y EXTRAORDINARIOS (Del 15  al 22 de Julio 2015)</b></td></tr>
+<tr><td>
+3454</td><td>	Hijo de Docente y Administrativo</td><td> 	60.00</td><td>	0.70</td><td>	60.70</td></tr><tr><td>
+3461</td><td>	Postulante colegio nacional</td><td> 	220.00</td><td>	0.70</td><td>	220.70</td></tr><tr><td>
+3463</td><td>	Postulante colegio particular</td><td> 	260.00</td><td>	0.70</td><td>	260.70</td></tr><tr><td>
+3457</td><td>	Licenciados Fuerzas Armadas, colegio nacional </td><td>	180.00</td><td>	0.70</td><td>	180.70</td></tr><tr><td>
+3459</td><td>	Licenciados Fuerzas Armadas colegio particular</td><td>	210.00</td><td>	0.70</td><td>210.70</td></tr><tr><td>
+3452</td><td>	Graduados y Titulados</td><td> 	1060.00</td><td>	0.70</td><td>	1060.70</td></tr><tr><td>
+3464</td><td>	Víctimas de Terrorismo (Gastos Administrativos)</td><td>	30.00</td><td>	0.70</td><td>	30.70</td></tr><tr><td>
+3474</td><td>	Reintegro</td><td></td><td></td><td></td></tr><tr>			
+<td align="center" colspan="5" bgcolor="#FFFFCC"><b>	PAGOS EXTEMPORANEOS SEGUN CRONOGRAMA DE POSTULANTES ORDINARIOS Y EXTRAORDINARIOS (Del 23  y 24 de Julio 2015)</b></td></tr><tr><td>			
+3455</td><td>	Hijo de Docente y Administrativo Extemporáneo</td><td> 	100.00</td><td>	0.70</td><td>	100.70</td></tr><tr><td>
+3460</td><td>	Postulante Colegio nacional Extemporáneo</td><td> 	260.00</td><td>	0.70</td><td>	260.70</td></tr><tr><td>
+3462</td>	<td>Postulante Colegio particular Extemporáneo </td><td>	300.00</td><td>	0.70</td><td>	300.70</td></tr><tr><td>
+3456</td><td>	Licenciados Fuerzas Armadas, colegio nacional extemporáneo</td><td> 	220.00</td><td>	0.70</td><td>	220.70</td></tr><tr><td>
+3458</td><td>	Licenciados Fuerzas Armadas colegio particular extemporáneo</td><td> 	250.00</td><td>	0.70</td><td>	250.70</td></tr><tr><td>
+3453</td><td>	Graduados y Titulados extemporáneo</td><td> 	1100.00</td><td>	0.70</td><td>	1100.70</td></tr>
+ </tbody>
+</table>
+
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+</div>
+<!--FIN TASAS-->
+
+<!--INSCRIPCION -->
+<div data-role="page" id="inscripcion">
+<!--HEADER -->
+<div data-role="header" data-position="fixed" >
+<a href="#principal" data-icon="home">Inicio</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#" data-icon="grid">Opciones</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes" data-icon="start" data-theme="b">Vacantes</a></li>
+<li><a href="#tasas" data-icon="check" data-theme="b">Tasas</a></li>
+<li><a href="#" data-icon="search" data-theme="b">Inscripción</a></li>
+<li><a href="#resultados" data-icon="forward" data-theme="b">Resultados</a></li>
+<li><a href="#contacto" data-icon="info" data-theme="b">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<div data-role="collapsible" data-theme="b" data-content-theme="b">
+<h3>Paso 01:</h3> 
+<center><img src="img/img-paso1.png"></center><p align="justify">Para iniciar el Proceso de Inscripción al Examen de Admisión 2015 - I deberás acercarte a las oficinas del Banco de la Nación de tu ciudad y realizar el pago de la tasa educativa por Derecho de Inscripción (consignando el número de DNI del postulante).</p>
+</div>
+<div data-role="collapsible" data-theme="b" data-content-theme="b">
+<h3>Paso 02:</h3> 
+<center><img src="img/img-paso2.png"></center><p align="justify">La Pre - Insccripción se realizará al día siguiente de haber realizado el pago en el Banco de la Nación, sugerimos Descargar la Guía del Postulante para el correcto llenado de la ficha web la cual tiene caracter de declaración jurada. Finalmente imprima por duplicado la Ficha de Inscripción. No hay lugar a rectificación si hubiera algún error en los datos consignados, debiendo pagar otra vez.</p>
+</div>
+<div data-role="collapsible" data-theme="b" data-content-theme="b">
+<h3>Paso 03:</h3> 
+<center><img src="img/img-paso3.png"></center><p align="justify">Una vez realizada la Pre - Inscripción vía web el postulante debera acercarse a la Oficina de la Comisión Ejecutiva Central de Admisión (Calle Las Palmeras N° 178 Urb. San José - Ica).Portando su Ficha de Inscripción web, DNI y copia del voucher del pago realizado en el Banco de la Nación, para la toma de la huella dactilar y foto correspondiente.</p>
+</div>
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+</div>
+<!--FIN INSCRIPCION-->
+
+<!--RESULTADOS -->
+<div data-role="page" id="resultados">
+<!--HEADER -->
+<div data-role="header" data-position="fixed" >
+<a href="#principal" data-icon="home">Inicio</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#" data-icon="grid">Opciones</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes" data-icon="start" data-theme="b">Vacantes</a></li>
+<li><a href="#tasas" data-icon="check" data-theme="b">Tasas</a></li>
+<li><a href="#inscripcion" data-icon="search" data-theme="b">Inscripción</a></li>
+<li><a href="#" data-icon="forward" data-theme="b">Resultados</a></li>
+<li><a href="#contacto" data-icon="info" data-theme="b">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<div data-role="collapsible" data-theme="b">
+<h3>RESULTADOS</h3>
+<center><img src="img/img-result.png"></center> 
+<p align="justify">Los resultados del presente exámen de admisión seran publicados aquí, el día 09 de Agosto del presente año.</p>
+
+
+<a href="javascript:openpdf()" rel="external" data-role="button" data-theme="e">VER RESULTADOS</a>
+
+<form action="http://www.unica.edu.pe/publicacion/resultados/php/consultar_estudiantes.php" id="form" method="post" data-ajax="false">
+        <label>Consultar</label>
+        <input type="numeric" id="txtGrupo" name="txtGrupo" maxlength="8" required>
+        <input type="button" id="btnConsultar" value="Consultar">
+        </form>	
+
+</div>
+
+    <!-- Mostrar resultado de la consulta -->
+    <div id="mostrarDatos">
+    	<ul data-role="listview" data-theme="a" id="listaDatos">
+    	</ul>
+    </div>
+
+
+
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+</div>
+<!--FIN RESULTADOS-->
+
+<!--CONTACTO -->
+<div data-role="page" id="contacto">
+<!--HEADER -->
+<div data-role="header" data-position="fixed" >
+<a href="#principal" data-icon="home">Inicio</a>
+<h1><img src="img/icon.png" width="55" height="55"></h1>
+<a href="#" data-icon="grid">Opciones</a>
+<div data-role="navbar">
+<ul >
+<li><a href="#vacantes" data-icon="start" data-theme="b">Vacantes</a></li>
+<li><a href="#tasas" data-icon="check" data-theme="b">Tasas</a></li>
+<li><a href="#inscripcion" data-icon="search" data-theme="b">Inscripción</a></li>
+<li><a href="#resultados" data-icon="forward" data-theme="b">Resultados</a></li>
+<li><a href="#" data-icon="info" data-theme="b">Contacto</a></li>
+</ul>
+</div>
+</div>
+<!--FIN DEL HEADER -->
+<!--CONTENIDO -->
+<div data-role="content" >
+<div data-role="collapsible" data-theme="b">
+<h3>Dirección</h3><p align="justify"> Calle las Palmeras Nº 187 Urb. San Jose(Espalda del Rectorado)</p>
+ </div>
+ <div data-role="collapsible" data-theme="b">
+<h3>Correo</h3> ceca_2014@outlook.com
+ </div>
+<div data-role="collapsible" data-theme="b">
+<h3>Telefono</h3> 056-211811 / 62-09-69
+</div>
+<div data-role="collapsible" data-theme="b">
+<h3>Ubicación</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.5255359880443!2d-75.73634764583362!3d-14.071145210572658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e294c7ac0eab%3A0xb4c6c1a1a83d704e!2sPalmeras%2C+Ica!5e0!3m2!1ses!2spe!4v1434471469575" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+</div>
+</div>
+<div data-role="footer" data-position="fixed">
+<h4>Derechos reservados. OGTIC 2015</h4>
+</div>
+</div>
+<!--FIN CONTACTO-->
+
+
+</body>
+</html>

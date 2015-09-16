@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.joeski"
+    version   = "1.0.0">
+
+<name>Unica</name>
+
+<description>
+Esta es una aplicación para el exámen de admisión.
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Oficina General de Tecnologia Informática y Comunicaciones.
+</author>
+
+<icon src="img/icon.png" />
+
+<access origin="*" />
+<access origin="*" subdomains="true" />
+<access uri="*" subdomains="true" />
+
+</widget>
